@@ -1,0 +1,63 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #c18737e6;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+header div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 25px;
+    left: 100px;
+}
+
+
+header div a img {
+    width: 150px;
+    height: 150px;
+}
+
+.navBar {
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+.navBar li {
+    list-style: none;   
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background-color: rgba(143, 71, 165, 0.929);
+}
+.banner {
+    width: 600px;
+    height: 400px;
+}
+
+.gif div {
+    background-color: black;
+}
+
+.gif div video {
+    width: 80%;
+    height: 40%;
+}
+
+
+
+footer {
+    background-color: lightgray;
+}
