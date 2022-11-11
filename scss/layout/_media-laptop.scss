@@ -1,5 +1,26 @@
-@media (min-width: 992px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
+
+
+
+
+    header .banner {
+        flex-direction: column;
+        h1{
+            justify-content: center;
+            font-size: 3rem;
+        }
+        img {
+            width: 500px;
+            height: 250px;
+            margin-left: 25%;
+        }
+    }
+
     main .sobreMi{
         height: 500px;
+    }
+
+    .footer-index {
+        margin-top: 200px;
     }
 }

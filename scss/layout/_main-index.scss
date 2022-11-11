@@ -1,5 +1,27 @@
 main {
     width: 100%;
+
+    .button-conoceme{
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        a{  
+            padding: 0 10px;
+            border-radius: 10px;
+            font-size: 30px;
+            font-family: $font-family-roboto;
+            text-decoration: none;
+            color: $color;
+            background: rgba(0,0,0, 0.7);
+            box-shadow: 2px 2px 19px 6px rgba(254,254,255,0.7);
+            transition: all .3s ease;
+            &:hover{
+                font-size: 35px;
+                padding: 10 20px;
+                box-shadow: 2px 2px 19px 6px rgba(0,0,0,0.7);
+            }
+        }
+    }
 }
 
 .boxSobreMi {

@@ -14,101 +14,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./assets/img/foto1.png" type="image/x-icon">
     <title>Murua-dev</title>
 </head>
 
 <body>
-    <div class="container-global">
+    <div class="container-global-index">
         <header>
-            <nav class="menu">
+            <nav class="menu-index">
                 <ul class="navBar">
-                    <li><a href="#sobremi">Sobre mi</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#redes">Redes sociales</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./pages/conoceme.html">Sobre mi</a></li>
+                    <li><a href="./pages/habilidades.html">Habilidades</a></li>
+                    <li><a href="#redes">hobbies</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             <div class="banner">
                 <img src="./assets/img/foto1.png" alt="fotobanner">
-                <h1>Murua Miguel-Full Stack Developer</h1>
+                <h1>Murúa Miguel-Jr.Developer Full Stack </h1>
             </div>
         </header>
         <main>
-            <section class="boxSobreMi" id="sobremi">
-                <div class="sobreMi">
-                    <h2>Sobre mí</h2>
-                    <p>Soy programador web Full Stack, me encanta todo lo relacionado al Front-End,
-                        soy autodidacta y dedico gran parte de mi tiempo a desarrollar las tecnologias
-                        adquiridas y estudiar nuevas para complementarlas con las ya vistas.
-                        Actualmente estoy en la etapa media del bootcamp de Coder-House en donde
-                        estoy realizando algunos proyectos propios para incorporar a mi portfolio.
-                        Estoy buscando formar parte de un grupo de trabajo donde poder adquirir experiencia,
-                        potenciar conocimientos y desarrollar los propios.</p>
-                </div>
-            </section>
-
-            <section class="boxHabilidades" id="habilidades">
-                <h2>
-                    Habilidades
-                </h2>
-                <div class="front">
-                    <h3>Front</h3>
-                    <div class="img1">
-                        <img src="./assets/icons/html5.png" alt="">
-                        <img src="./assets/icons/css-3.png" alt="">
-                    </div>
-                    <div class="img2">
-                        <img src="./assets/icons/sass.png" alt="">
-                        <img src="./assets/icons/git.png" alt="">
-                    </div>
-                </div>
-                <div class="back">
-                    <h3>Back</h3>
-                    <div class="img3">
-                        <img src="./assets/icons/js.png" alt="">
-                        <img src="./assets/icons/nodejs.png" alt="">
-                    </div>
-                    <div class="img4">
-                        <img src="./assets/icons/python.png" alt="">
-                        <img src="./assets/icons/php.png" alt="">
-                    </div>
-                </div>
-                <div class="frameworks">
-                    <h3>Frameworks</h3>
-                    <div class="img5">
-                        <img src="./assets/icons/bootstrap.png" alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="container-form" id="contacto">
-                <form action="" class="form">
-                    <div class="form-main">
-                        <h3 class="form-tittle">
-                            <span>Contacto</span>
-                        </h3>
-                    </div>
-                    <label for="nombre" class="form-label">Nombres:</label>
-                    <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre">
-
-                    <label for="direccion" class="form-label">Dirección:</label>
-                    <input type="text" id="direccion" class="form-input" placeholder="Escriba su dirección">
-
-                    <label for="correo" class="form-label">Email</label>
-                    <input type="email" id="correo" class="form-input" placeholder="Escriba su correo">
-
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea id="mensaje" class="form-textarea" placeholder="Aqui escriba su mensaje"></textarea>
-
-                    <input type="submit" class="btn-submit" value="Enviar Consulta">
-                </form>
-            </section>
+            <div class="button-conoceme">
+                <a href="./pages/conoceme.html">Conóceme</a>
+            </div>
         </main>
-        <footer class="footer" id="redes">
-            <section class="container-fluid w-100 mt-5 redes-sociales">
+        <footer class="footer-index" id="redes">
+            <section class="redes-sociales">
                 <div class="imgRedes">
                     <a href="https://www.facebook.com/miguel.murua.12" target="_blank"><img
                             src="./assets/icons/facebook.png" alt=""></a>
@@ -123,10 +57,6 @@
             </section>
         </footer>
     </div>
-    <!--Scrip boostrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

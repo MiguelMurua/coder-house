@@ -1,3 +1,10 @@
+
+.menu-index{
+    display: none;
+}
+
+
+
 header {
     width: 100%;
     nav{
@@ -73,23 +80,25 @@ header {
         }
     }
 
-.banner {
-    margin-top: 50px;
-    display: flex;
-    h1{
-        width: 100%;
+
+    .banner{
+        margin-top: 0;
+        padding-top: 50px;
         display: flex;
-        justify-content: flex-start;
-        margin-top: 2%;
-        font-family:$font-family-roboto;
-        font-size: 6em;
-        user-select: none;
-        color: #ffa237ef;
-        text-shadow: -4px 2px 6px rgba(0, 0, 0, 0.87);
+        h1{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 2%;
+            font-family:$font-family-roboto;
+            font-size: 6em;
+            user-select: none;
+            color: #ffa237ef;
+            text-shadow: -4px 2px 6px rgba(0, 0, 0, 0.87);
+        }
+        img{
+            width: 590px;
+            height: 280px;
+            flex-direction: row;
+        }
     }
-    img{
-        width: 590px;
-        height: 280px;
-        flex-direction: row;
-    }
-}

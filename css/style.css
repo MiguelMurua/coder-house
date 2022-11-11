@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.container-global {
+.container-global, .container-contact, .container-global-index {
   width: 100%;
   height: 100%;
   background-size: 300% 300%;
@@ -18,6 +18,15 @@
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+
+.container-contact {
+  height: 100%; }
+
+.container-global-index {
+  height: 100vh; }
+
+.menu-index {
+  display: none; }
 
 header {
   width: 100%; }
@@ -87,7 +96,8 @@ header {
     background-position: 0 0; } }
 
 .banner {
-  margin-top: 50px;
+  margin-top: 0;
+  padding-top: 50px;
   display: flex; }
   .banner h1 {
     width: 100%;
@@ -106,6 +116,24 @@ header {
 
 main {
   width: 100%; }
+  main .button-conoceme {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px; }
+    main .button-conoceme a {
+      padding: 0 10px;
+      border-radius: 10px;
+      font-size: 30px;
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      color: #ffa237;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 2px 2px 19px 6px rgba(254, 254, 255, 0.7);
+      transition: all .3s ease; }
+      main .button-conoceme a:hover {
+        font-size: 35px;
+        padding: 10 20px;
+        box-shadow: 2px 2px 19px 6px rgba(0, 0, 0, 0.7); }
 
 .boxSobreMi {
   width: 100%;
@@ -275,53 +303,176 @@ main {
   .container-form .form .btn-submit:hover {
     background: #f29718; }
 
-.footer .redes-sociales {
+.footer .redes-sociales, .footer-contact .redes-sociales, .footer-index .redes-sociales {
   width: 100%;
   height: 100px;
   background-color: #000000de;
   display: flex;
   flex-direction: column; }
 
-.footer img {
+.footer img, .footer-contact img, .footer-index img {
   width: 50px;
   height: 50px;
   background: black;
   border-radius: 12px;
   box-shadow: #c7c7c7; }
 
-.footer .imgRedes {
+.footer .imgRedes, .footer-contact .imgRedes, .footer-index .imgRedes {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center; }
 
-.footer .copyright {
+.footer .copyright, .footer-contact .copyright, .footer-index .copyright {
   margin-top: 3px;
   display: flex;
   justify-content: center; }
-  .footer .copyright h4 {
+  .footer .copyright h4, .footer-contact .copyright h4, .footer-index .copyright h4 {
     color: #c7c7c7; }
 
-@media (min-width: 320px) and (max-width: 425px) {
-  header .navBar li {
-    padding: 2px; }
+.footer-contact {
+  margin-top: 170px; }
+
+.footer-index {
+  margin-top: 300px; }
+
+@media (max-width: 992px) {
+  .banner img {
+    width: 590px;
+    height: 280px;
+    align-self: center; } }
+
+.sobreMi {
+  padding-top: 20px; }
+
+@media (max-width: 1440px) {
+  .container-global-index {
+    height: 100%; } }
+
+@media (max-width: 1024px) {
   header .banner {
-    margin-top: -30px; }
+    flex-direction: column; }
     header .banner h1 {
-      font-size: 2em; }
+      justify-content: center;
+      font-size: 3rem; }
     header .banner img {
-      width: 300px;
-      height: 170px;
-      align-self: center; }
+      width: 500px;
+      height: 250px;
+      margin-left: 25%; }
+  main .sobreMi {
+    height: 500px; }
+  .footer-index {
+    margin-top: 200px; } }
+
+@media (max-width: 768px) {
+  .container-global, .container-contact, .container-global-index {
+    width: 100%;
+    height: 100%; }
+  .menu {
+    background: none; }
+  .navBar {
+    background: black;
+    display: flex;
+    padding-left: 0;
+    text-align: center;
+    flex-direction: column; }
+    .navBar li {
+      border-bottom: 1px solid #ffa237;
+      padding: 5px;
+      margin: auto; }
+  header .banner {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column; }
+    header .banner h1 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 3%;
+      padding-left: 5px;
+      padding-right: 5px;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 3em;
+      user-select: none;
+      color: #ffa237ef;
+      text-shadow: -4px 2px 6px rgba(0, 0, 0, 0.87); }
+    header .banner img {
+      margin-top: 0;
+      margin-left: 0;
+      width: 400px;
+      height: 200px; }
   .boxSobreMi {
-    margin-top: 100px; }
+    margin-top: 300px; }
     .boxSobreMi .sobreMi {
-      height: 440px; }
+      width: 100%;
+      height: 350px; }
       .boxSobreMi .sobreMi h2 {
         font-size: 2rem; }
       .boxSobreMi .sobreMi p {
-        padding-top: 0;
-        font-size: 1em; }
+        font-size: 1.5rem; }
+  .boxSobreMi:nth-child(2) {
+    margin-top: 0; }
+  .boxSobreMi:nth-child(3) {
+    margin-top: 0; }
+  .boxHabilidades {
+    width: 100%;
+    height: 800px;
+    margin-top: 250px; }
+  .front .img1, .boxHabilidades .front .img2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  .back .img3, .boxHabilidades .back .img4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  .container-form .form {
+    background: rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 250px;
+    padding-bottom: 30px;
+    border-radius: 3px; }
+  .footer-contact .redes-sociales {
+    height: 80px; }
+  .footer-contact .imgRedes img {
+    width: 35px;
+    height: 35px; } }
+
+@media (max-width: 425px) {
+  .container-global, .container-contact, .container-global-index {
+    height: 100%; }
+  header .navBar li {
+    padding: 5px; }
+  header .navBar a {
+    font-size: 15px; }
+  header .banner {
+    margin-left: 0; }
+    header .banner h1 {
+      font-size: 1.5rem; }
+  main {
+    margin-bottom: -200px; }
+  .boxSobreMi {
+    margin-top: 150px; }
+    .boxSobreMi .sobreMi {
+      height: 177px;
+      padding-top: 0; }
+      .boxSobreMi .sobreMi h2 {
+        font-size: 1.5rem; }
+      .boxSobreMi .sobreMi p {
+        padding: 0 10px;
+        font-size: .8rem; }
+  .boxSobreMi:nth-child(2) {
+    margin-top: -100px; }
+    .boxSobreMi:nth-child(2) .sobreMi h2 {
+      font-size: 1.3rem; }
+  .boxSobreMi:nth-child(3) {
+    margin-top: -100px; }
   main .boxHabilidades {
     width: 100%;
     display: grid;
@@ -380,7 +531,7 @@ main {
     max-width: 650px;
     margin: auto;
     padding: 5px 35px;
-    margin-top: 150px;
+    margin-top: 227px;
     padding-bottom: 30px;
     border-radius: 3px; }
   .container-form .form .form-main .form-tittle {
@@ -415,79 +566,16 @@ main {
     padding: 8px 0;
     cursor: pointer;
     transition: all .5s ease; }
-  .footer .redes-sociales {
-    height: 70px; }
-  .footer img {
-    width: 30px;
-    height: 30px; }
-  .footer .copyright {
+  .footer .redes-sociales, .footer-contact .redes-sociales, .footer-index .redes-sociales {
+    height: 74px; }
+  .footer img, .footer-contact img, .footer-index img {
+    width: 25px;
+    height: 25px; }
+  .footer .copyright, .footer-contact .copyright, .footer-index .copyright {
     margin-top: 5px; }
-  .footer .copyright h4 {
-    font-size: 0.8rem; } }
-
-@media (max-width: 768px) {
-  .container-global {
-    width: 100%; }
-  .menu {
-    background: none; }
-  .navBar {
-    background: black;
-    display: flex;
-    padding-left: 0;
-    text-align: center;
-    flex-direction: column; }
-    .navBar li {
-      border-bottom: 1px solid #ffa237;
-      padding: 15px;
-      margin: auto; }
-  .banner {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column; }
-    .banner h1 {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 3%;
-      padding-left: 5px;
-      padding-right: 5px;
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-      font-size: 3em;
-      user-select: none;
-      color: #ffa237ef;
-      text-shadow: -4px 2px 6px rgba(0, 0, 0, 0.87); }
-    .banner img {
-      margin-top: 200px;
-      width: 400px;
-      height: 200px; }
-  .sobreMi {
-    width: 100%;
-    height: 600px; }
-  .boxHabilidades {
-    width: 100%;
-    height: 800px;
-    margin-top: 250px; }
-  .front .img1, .boxHabilidades .front .img2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; }
-  .back .img3, .boxHabilidades .back .img4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; } }
-
-@media (min-width: 992px) and (max-width: 1024px) {
-  main .sobreMi {
-    height: 500px; } }
-
-@media (max-width: 992px) {
-  .banner img {
-    width: 590px;
-    height: 280px;
-    align-self: center; } }
-
-.sobreMi {
-  padding-top: 20px; }
+  .footer .copyright h4, .footer-contact .copyright h4, .footer-index .copyright h4 {
+    font-size: 0.8rem; }
+  .footer-contact {
+    margin-top: 408px; }
+  .footer-index {
+    margin-top: 300px; } }

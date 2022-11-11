@@ -23,3 +23,13 @@
         background-position: 0% 50%
     }
 }
+
+.container-contact{
+    @extend .container-global;
+    height: 100%;
+}
+
+.container-global-index{
+    @extend .container-global;
+    height: 100vh;
+}

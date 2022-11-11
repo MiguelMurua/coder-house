@@ -28,3 +28,13 @@
         }
     }
 }
+
+.footer-contact{
+    @extend .footer;
+    margin-top: 170px;
+}
+
+.footer-index{
+    @extend .footer;
+    margin-top: 300px;
+}
