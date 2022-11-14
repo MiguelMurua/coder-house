@@ -31,8 +31,38 @@ main {
     grid-template-columns: 100%;
     grid-template-rows: 400px;
 }
-
+.boxConoceme{
+    width: 100%;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px;;
+}
 .sobreMi{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0, 0.7);
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+    h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: $color;
+        font-family:$font-family-secundary;
+        font-size: 3rem;
+        word-spacing: 10px;
+    }
+    p {
+        color: $color;
+        font-size: 2rem;
+        font-family:$font-family-secundary;
+        padding: 40px;
+        word-spacing: 2px;
+    }
+}
+.conoceme{
     display: flex;
     flex-direction: column;
     background: rgba(0,0,0, 0.7);

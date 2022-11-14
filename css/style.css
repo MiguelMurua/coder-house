@@ -4,9 +4,9 @@
   padding: 0;
   box-sizing: border-box; }
 
-.container-global, .container-contact, .container-global-index {
+.container-global, .container-global-html {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: 300% 300%;
   background-image: linear-gradient(-45deg, #d8e33b 0%, #57e6a3 25%, #9844b7 50%, #ddf842 100%);
   animation: AnimateBG 30s ease infinite; }
@@ -18,12 +18,6 @@
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-
-.container-contact {
-  height: 100%; }
-
-.container-global-index {
-  height: 100vh; }
 
 .menu-index {
   display: none; }
@@ -142,6 +136,13 @@ main {
   grid-template-columns: 100%;
   grid-template-rows: 400px; }
 
+.boxConoceme {
+  width: 100%;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 400px; }
+
 .sobreMi {
   display: flex;
   flex-direction: column;
@@ -158,6 +159,28 @@ main {
     font-size: 3rem;
     word-spacing: 10px; }
   .sobreMi p {
+    color: #ffa237;
+    font-size: 2rem;
+    font-family: "Bebas Neue", cursive;
+    padding: 40px;
+    word-spacing: 2px; }
+
+.conoceme {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: left; }
+  .conoceme h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #ffa237;
+    font-family: "Bebas Neue", cursive;
+    font-size: 3rem;
+    word-spacing: 10px; }
+  .conoceme p {
     color: #ffa237;
     font-size: 2rem;
     font-family: "Bebas Neue", cursive;
@@ -303,31 +326,31 @@ main {
   .container-form .form .btn-submit:hover {
     background: #f29718; }
 
-.footer .redes-sociales, .footer-contact .redes-sociales, .footer-index .redes-sociales {
+.footer .redes-sociales, .footer-contact .redes-sociales, .footer-index .redes-sociales, .footer-contact-2 .redes-sociales {
   width: 100%;
   height: 100px;
   background-color: #000000de;
   display: flex;
   flex-direction: column; }
 
-.footer img, .footer-contact img, .footer-index img {
+.footer img, .footer-contact img, .footer-index img, .footer-contact-2 img {
   width: 50px;
   height: 50px;
   background: black;
   border-radius: 12px;
   box-shadow: #c7c7c7; }
 
-.footer .imgRedes, .footer-contact .imgRedes, .footer-index .imgRedes {
+.footer .imgRedes, .footer-contact .imgRedes, .footer-index .imgRedes, .footer-contact-2 .imgRedes {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center; }
 
-.footer .copyright, .footer-contact .copyright, .footer-index .copyright {
+.footer .copyright, .footer-contact .copyright, .footer-index .copyright, .footer-contact-2 .copyright {
   margin-top: 3px;
   display: flex;
   justify-content: center; }
-  .footer .copyright h4, .footer-contact .copyright h4, .footer-index .copyright h4 {
+  .footer .copyright h4, .footer-contact .copyright h4, .footer-index .copyright h4, .footer-contact-2 .copyright h4 {
     color: #c7c7c7; }
 
 .footer-contact {
@@ -335,6 +358,39 @@ main {
 
 .footer-index {
   margin-top: 300px; }
+
+.footer-contact-2 {
+  margin-top: 326px; }
+
+@media (max-width: 2560px) {
+  .container-global, .container-global-html {
+    height: 100%; }
+  .boxSobreMi:first-child .sobreMi {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/mecanica.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  .boxSobreMi:nth-child(2) {
+    margin-top: 150px; }
+    .boxSobreMi:nth-child(2) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/cs.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain; }
+  .boxSobreMi:nth-child(3) {
+    margin-top: 150px; }
+    .boxSobreMi:nth-child(3) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/viajar.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain; }
+  .boxSobreMi:nth-child(4) {
+    margin-top: 150px; }
+    .boxSobreMi:nth-child(4) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/pesca1.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain; } }
 
 @media (max-width: 992px) {
   .banner img {
@@ -346,10 +402,12 @@ main {
   padding-top: 20px; }
 
 @media (max-width: 1440px) {
-  .container-global-index {
+  .container-global, .container-global-html {
     height: 100%; } }
 
 @media (max-width: 1024px) {
+  .container-global, .container-global-html {
+    height: 100%; }
   header .banner {
     flex-direction: column; }
     header .banner h1 {
@@ -361,11 +419,38 @@ main {
       margin-left: 25%; }
   main .sobreMi {
     height: 500px; }
+  .boxSobreMi:first-child .sobreMi {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/mecanica.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .boxSobreMi:nth-child(2) {
+    margin-top: 150px; }
+    .boxSobreMi:nth-child(2) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/cs.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .boxSobreMi:nth-child(3) {
+    margin-top: 150px; }
+    .boxSobreMi:nth-child(3) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/viajar.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .boxSobreMi:nth-child(4) {
+    margin-top: 150px; }
+    .boxSobreMi:nth-child(4) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/pesca1.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .boxConoceme .conoceme h2 {
+    font-size: 2.5rem; }
+  .boxConoceme .conoceme p {
+    font-size: 1.5rem; }
   .footer-index {
     margin-top: 200px; } }
 
 @media (max-width: 768px) {
-  .container-global, .container-contact, .container-global-index {
+  .container-global, .container-global-html {
     width: 100%;
     height: 100%; }
   .menu {
@@ -406,15 +491,45 @@ main {
     margin-top: 300px; }
     .boxSobreMi .sobreMi {
       width: 100%;
-      height: 350px; }
+      height: 430px; }
       .boxSobreMi .sobreMi h2 {
         font-size: 2rem; }
       .boxSobreMi .sobreMi p {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        padding: 0 40px; }
+  .boxConoceme {
+    margin-top: 300px; }
+    .boxConoceme .conoceme {
+      width: 100%;
+      height: 430px; }
+      .boxConoceme .conoceme h2 {
+        font-size: 2rem; }
+      .boxConoceme .conoceme p {
+        font-size: 1.5rem;
+        padding: 0 40px; }
+  .boxSobreMi:first-child .sobreMi {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/mecanica.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
   .boxSobreMi:nth-child(2) {
-    margin-top: 0; }
+    margin-top: 80px; }
+    .boxSobreMi:nth-child(2) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/cs.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
   .boxSobreMi:nth-child(3) {
-    margin-top: 0; }
+    margin-top: 80px; }
+    .boxSobreMi:nth-child(3) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/viajar.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .boxSobreMi:nth-child(4) {
+    margin-top: 80px; }
+    .boxSobreMi:nth-child(4) .sobreMi {
+      background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.76)), url(../assets/img/pesca1.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
   .boxHabilidades {
     width: 100%;
     height: 800px;
@@ -445,7 +560,9 @@ main {
     height: 35px; } }
 
 @media (max-width: 425px) {
-  .container-global, .container-contact, .container-global-index {
+  .container-global, .container-global-html {
+    height: 100vh; }
+  .container-global-html {
     height: 100%; }
   header .navBar li {
     padding: 5px; }
@@ -456,7 +573,7 @@ main {
     header .banner h1 {
       font-size: 1.5rem; }
   main {
-    margin-bottom: -200px; }
+    margin-bottom: -400px; }
   .boxSobreMi {
     margin-top: 150px; }
     .boxSobreMi .sobreMi {
@@ -472,6 +589,24 @@ main {
     .boxSobreMi:nth-child(2) .sobreMi h2 {
       font-size: 1.3rem; }
   .boxSobreMi:nth-child(3) {
+    margin-top: -100px; }
+  .boxSobreMi:nth-child(4) {
+    margin-top: -100px; }
+  .boxConoceme {
+    margin-top: 150px; }
+    .boxConoceme .conoceme {
+      height: 200px;
+      padding-top: 0; }
+      .boxConoceme .conoceme h2 {
+        font-size: 1.5rem; }
+      .boxConoceme .conoceme p {
+        padding: 0 10px;
+        font-size: .8rem; }
+  .boxConoceme:nth-child(2) {
+    margin-top: -100px; }
+    .boxConoceme:nth-child(2) .conoceme h2 {
+      font-size: 1.3rem; }
+  .boxConoceme:nth-child(3) {
     margin-top: -100px; }
   main .boxHabilidades {
     width: 100%;
@@ -566,16 +701,16 @@ main {
     padding: 8px 0;
     cursor: pointer;
     transition: all .5s ease; }
-  .footer .redes-sociales, .footer-contact .redes-sociales, .footer-index .redes-sociales {
+  .footer .redes-sociales, .footer-contact .redes-sociales, .footer-index .redes-sociales, .footer-contact-2 .redes-sociales {
     height: 74px; }
-  .footer img, .footer-contact img, .footer-index img {
+  .footer img, .footer-contact img, .footer-index img, .footer-contact-2 img {
     width: 25px;
     height: 25px; }
-  .footer .copyright, .footer-contact .copyright, .footer-index .copyright {
+  .footer .copyright, .footer-contact .copyright, .footer-index .copyright, .footer-contact-2 .copyright {
     margin-top: 5px; }
-  .footer .copyright h4, .footer-contact .copyright h4, .footer-index .copyright h4 {
+  .footer .copyright h4, .footer-contact .copyright h4, .footer-index .copyright h4, .footer-contact-2 .copyright h4 {
     font-size: 0.8rem; }
   .footer-contact {
-    margin-top: 408px; }
+    margin-top: 590px; }
   .footer-index {
-    margin-top: 300px; } }
+    margin-top: 690px; } }

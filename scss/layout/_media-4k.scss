@@ -1,25 +1,7 @@
-@media (max-width: 1024px) {
-
+@media (max-width: 2560px){
+    
     .container-global{
         height: 100%;
-    }
-
-
-    header .banner {
-        flex-direction: column;
-        h1{
-            justify-content: center;
-            font-size: 3rem;
-        }
-        img {
-            width: 500px;
-            height: 250px;
-            margin-left: 25%;
-        }
-    }
-
-    main .sobreMi{
-        height: 500px;
     }
 
     .boxSobreMi:first-child {
@@ -27,7 +9,7 @@
             background-image: linear-gradient(rgba(5, 7, 12, .30), rgba(5, 7, 12, .76)), url(../assets/img/mecanica.png);
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: cover;
+            background-size: contain;
         }
     }
 
@@ -37,7 +19,8 @@
         .sobreMi {
             background: linear-gradient(rgba(5, 7, 12, .30), rgba(5, 7, 12, .76)), url(../assets/img/cs.png);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-position: center center;
+            background-size: contain;
         }
     }
 
@@ -47,7 +30,8 @@
         .sobreMi {
             background: linear-gradient(rgba(5, 7, 12, .30), rgba(5, 7, 12, .76)), url(../assets/img/viajar.png);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-position: center center;
+            background-size: contain;
         }
     }
 
@@ -57,25 +41,9 @@
         .sobreMi {
             background: linear-gradient(rgba(5, 7, 12, .30), rgba(5, 7, 12, .76)), url(../assets/img/pesca1.png);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-position: center center;
+            background-size: contain;
         }
-    }
-
-    
-    .boxConoceme{
-        .conoceme{
-            h2 {
-                font-size: 2.5rem;
-            }
-            p {
-                font-size: 1.5rem;
-            }
-        }
-    }   
-
-
-    .footer-index {
-        margin-top: 200px;
     }
 
 
