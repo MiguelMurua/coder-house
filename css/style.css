@@ -454,7 +454,7 @@ main {
 @media (max-width: 768px) {
   .container-global, .container-global-html {
     width: 100%;
-    height: 100vh; }
+    height: 100%; }
   .container-global-html {
     height: 100%; }
   .menu {
@@ -567,7 +567,7 @@ main {
 
 @media (max-width: 425px) {
   .container-global, .container-global-html {
-    height: 100vh; }
+    height: 100%; }
   .container-global-html {
     height: 100%; }
   header .navBar li {
@@ -723,7 +723,7 @@ main {
 
 @media (max-width: 375px) {
   .container-global, .container-global-html {
-    height: 100vh; }
+    height: 100%; }
   .footer-index {
     margin-top: 747px; }
   .footer-contact {
@@ -731,6 +731,6 @@ main {
 
 @media (max-width: 320px) {
   .container-global, .container-global-html {
-    height: 100vh; }
+    height: 100%; }
   .footer-index {
     margin-top: 748px; } }
