@@ -392,7 +392,7 @@ main {
       background-position: center center;
       background-size: contain; }
   .footer-index {
-    margin-top: 313px; } }
+    margin-top: 356px; } }
 
 @media (max-width: 992px) {
   .banner img {
@@ -563,7 +563,7 @@ main {
     width: 35px;
     height: 35px; }
   .footer-index {
-    margin-top: 250px; } }
+    margin-top: 252px; } }
 
 @media (max-width: 425px) {
   .container-global, .container-global-html {
@@ -719,10 +719,20 @@ main {
   .footer-contact {
     margin-top: 678px; }
   .footer-index {
-    margin-top: 690px; } }
+    margin-top: 775px; } }
 
 @media (max-width: 320px) {
   .container-global-html {
     height: 100vh; }
   .footer-index {
     margin-top: 500px; } }
+
+@media (max-width: 375px) {
+  .container-global, .container-global-html {
+    height: 100%; }
+  .container-global-html {
+    height: 100vh; }
+  .footer-index {
+    margin-top: 709px; }
+  .footer-contact {
+    margin-top: 608px; } }
