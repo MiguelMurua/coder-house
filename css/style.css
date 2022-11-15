@@ -721,16 +721,16 @@ main {
   .footer-index {
     margin-top: 775px; } }
 
-@media (max-width: 320px) {
-  .container-global-html {
-    height: 100vh; }
-  .footer-index {
-    margin-top: 500px; } }
-
 @media (max-width: 375px) {
   .container-global, .container-global-html {
     height: 100vh; }
   .footer-index {
-    margin-top: 550px; }
+    margin-top: 747px; }
   .footer-contact {
     margin-top: 608px; } }
+
+@media (max-width: 320px) {
+  .container-global, .container-global-html {
+    height: 100vh; }
+  .footer-index {
+    margin-top: 748px; } }
