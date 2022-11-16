@@ -38,13 +38,13 @@ header {
             border-radius: 5px;
             &::before{
                 content: '';
-                background: linear-gradient(45deg, #d9ff00, #ffe600, #ffa600, #ff5100, #ff3300, #ffa600, #fffb00, #fffb00, #b3ff00);
+                background: linear-gradient(45deg, #c2c2c2, #575756, #222222, #b9b8b8, #6b6a6a, #1b1b1b, #f8f8f8, #8b8b8a, #969695);
                 position: absolute;
                 top: 0px;
                 left:-10px;
                 background-size: 400%;
                 z-index: -1;
-                filter: blur(0px);
+                filter: blur(10px);
                 width: calc(100% + 22px);
                 height: calc(100% + 4px);
                 animation: glowing 20s linear infinite;
