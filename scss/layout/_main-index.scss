@@ -16,6 +16,7 @@ main {
             box-shadow: 2px 2px 19px 6px rgba(254,254,255,0.7);
             transition: all .3s ease;
             &:hover{
+                margin-top: 5px;
                 font-size: 35px;
                 padding: 10 20px;
                 box-shadow: 2px 2px 19px 6px rgba(0,0,0,0.7);
